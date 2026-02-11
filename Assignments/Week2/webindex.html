@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Mini CSS Site</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Internal CSS -->
+    <style>
+        header {
+            background-color: lightblue; /* Overrides external */
+            padding: 15px;
+            text-align: center;
+        }
+        .highlight {
+            color: green; /* Lower priority than inline */
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Welcome to My Mini Site</h1>
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2 class="highlight" style="color: red;">🔥 Cascade in Action</h2>
+        <p>This text demonstrates <strong>inline, internal, and external CSS</strong>.</p>
+    </section>
+
+    <section>
+        <h2>Specificity Example</h2>
+        <p id="special">This paragraph is styled with an <code>ID</code>.</p>
+        <p class="note">This one is styled with a <code>class</code>.</p>
+        <p>This one is styled by an <code>element selector</code>.</p>
+    </section>
+</main>
+
+<footer>
+    <address>Contact me at <a href="mailto:hello@example.com">hello@example.com</a></address>
+</footer>
+</body>
+</html>
