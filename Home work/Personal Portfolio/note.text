@@ -1,0 +1,32 @@
+Homework Assignment: Build a Simple Personal Portfolio Page
+Hey class, for this week's homework, you're going to put together what we've learned so far in HTML basics and CSS. 
+Create a single webpage that acts as your personal portfolio. It should include a navigation bar,
+some styled text, links (internal and external), and a bit of formatting. Keep it simple—no need for fancy stuff yet.
+
+Requirements:
+HTML Structure:
+Use proper DOCTYPE, head, and body tags.
+
+Include a <title> tag with something like "My Portfolio".
+
+Add semantic elements: <header>, <nav>, <main>, <section>, and <footer>.
+
+Create at least 3 sections: About Me, Projects, and Contact.
+
+Use headings (<h1> to <h3>), paragraphs (<p>), and an unordered list (<ul>) for projects.
+
+Links and Navigation:
+Build a <nav> with a <ul> of links: Home (links to #home), About (#about), Projects (#projects),
+ Contact (#contact). Use bookmark links to jump to sections on the same page
+
+Add one external link, like to your favorite website (e.g., <a href="https://www.github.com" target="_blank">GitHub</a>).
+Include an email link in the Contact section: <a href="mailto:your.email@example.com">Email Me</a>.
+
+CSS Styling:
+Link an external CSS file (create a file called styles.css).
+Style the body: Set a background color (e.g., light gray) and font family (e.g., Arial).
+Make the nav horizontal: Use display: inline for <li> items, remove bullets, add padding/margins.
+Style links: Different colors for hover (e.g., red on hover) and visited (e.g., purple).
+Center the main content and add borders or padding to sections for visual separation.
+Make headings bold and larger (e.g., h1 { font-size: 2em; color: navy; }).
+Footer
