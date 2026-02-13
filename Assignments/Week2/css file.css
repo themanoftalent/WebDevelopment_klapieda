@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: purple; /* Base style overridden by internal and inline */
+}
+
+p {
+    color: gray;
+}
+
+#highlight {
+    color: orange; /* ID selector overrides class/element selectors */
+}
+
+.intro {
+    color: teal; /* Class selector overrides element but not ID */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+    h1 {
+        font-size: 20px;
+    }
+}

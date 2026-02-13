@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Mini Site</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Internal CSS */
+        h1 {
+            color: blue; /* overrides external but not inline */
+        }
+        .intro {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1 style="color: red;">Welcome to My Mini Site</h1> <!-- Inline CSS wins -->
+    <nav>
+        <a href="index.html">Home</a> | <a href="about.html">About</a>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2 class="intro">Introduction</h2>
+        <p id="highlight">This is the home page styled with inline, internal, and external CSS.</p>
+    </section>
+</main>
+
+<footer>
+    <address>Contact us at: example@email.com</address>
+</footer>
+</body>
+</html>
