@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyTube - Watch Video</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>MyTube</h1>
+    <button id="theme-toggle">Button</button>
+  </header>
+
+  <main>
+    <div class="video-container">
+      <video id="video-player" controls>
+        <source id="video-source" src="" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+      <h2 id="video-title">Video Title</h2>
+      <div class="actions">
+        <button id="like-btn"><span id="like-count">0</span></button>
+        <button id="watch-later-btn">Watch Later</button>
+      </div>
+      <div class="comments-section">
+        <h3>Comments</h3>
+        <form id="comment-form">
+          <input type="text" id="comment-input" placeholder="Add a comment..." required>
+          <button type="submit">Comment</button>
+        </form>
+        <ul id="comments-list"></ul>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/video.js"></script>
+</body>
+</html>

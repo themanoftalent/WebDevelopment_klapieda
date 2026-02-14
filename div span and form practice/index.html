@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cybersecurity Course Registration</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f9f9f9;
+        padding: 20px;
+    }
+
+    h1 {
+        color: #2a2a72;
+        text-align: center;
+    }
+
+    form {
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    .topics {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .submit-btn {
+        background-color: #2a2a72;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .submit-btn:hover {
+        background-color: #1f1f5c;
+    }
+
+    span.highlight {
+        color: #d6336c;
+        font-weight: bold;
+    }
+
+    .explanation {
+        max-width: 500px;
+        margin: 20px auto;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+</style>
+</head>
+<body>
+
+<h1>Register for the <span class="highlight">Cybersecurity</span> Course</h1>
+
+<form>
+    <div class="form-group">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-group">
+        <label for="skill">Skill Level:</label>
+        <select id="skill" name="skill">
+            <option value="">Select your skill level</option>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label>Topics of Interest:</label>
+        <div class="topics">
+            <label><input type="checkbox" name="topic" value="network-security"> Network Security</label>
+            <label><input type="checkbox" name="topic" value="ethical-hacking"> Ethical Hacking</label>
+            <label><input type="checkbox" name="topic" value="privacy"> Privacy</label>
+            <label><input type="checkbox" name="topic" value="cryptography"> Cryptography</label>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us a bit about yourself"></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="submit-btn">Submit Registration</button>
+    </div>
+</form>
+
+<div class="explanation">
+    In this form, <span class="highlight">&lt;div&gt;</span> is used to group form fields together as blocks, 
+    while <span class="highlight">&lt;span&gt;</span> is used to highlight specific words inline like 
+    "<span class="highlight">Cybersecurity</span>" or "<span class="highlight">Privacy</span>".
+</div>
+
+</body>
+</html>

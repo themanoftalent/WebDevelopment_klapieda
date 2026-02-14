@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Audio Tag - College Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      background: #ffffff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>HTML5 Audio Tag Demonstration</h1>
+
+<div class="section">
+  <h3>1. Basic Audio (MP3)</h3>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    Your browser does not support HTML5 audio.
+  </audio>
+</div>
+
+<div class="section">
+  <h3>2. Multiple Audio Formats (MP3, OGG, WAV)</h3>
+  <audio controls>
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+    <source src="audio.wav" type="audio/wav">
+    Your browser does not support HTML5 audio.
+  </audio>
+</div>
+
+<div class="section">
+  <h3>3. Autoplay Audio (Muted)</h3>
+  <audio controls autoplay muted>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="section">
+  <h3>4. Loop Audio</h3>
+  <audio controls loop>
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="section">
+  <h3>5. Preload Metadata</h3>
+  <audio controls preload="metadata">
+    <source src="audio.mp3" type="audio/mpeg">
+  </audio>
+</div>
+
+<div class="section">
+  <h3>6. Hidden Audio Controlled Using JavaScript</h3>
+
+  <audio id="hiddenAudio">
+    <source src="audio.mp3" type="audio/mpeg">
+    <source src="audio.ogg" type="audio/ogg">
+  </audio>
+
+  <button onclick="playAudio()">Play</button>
+  <button onclick="pauseAudio()">Pause</button>
+  <button onclick="stopAudio()">Stop</button>
+</div>
+
+<div class="section">
+  <h3>7. Audio with Fallback Text</h3>
+  <audio controls>
+    <source src="audio.ogg" type="audio/ogg">
+    <p>Your browser does not support HTML5 audio.</p>
+  </audio>
+</div>
+
+<script>
+  const audio = document.getElementById("hiddenAudio");
+
+  function playAudio() {
+    audio.play();
+  }
+
+  function pauseAudio() {
+    audio.pause();
+  }
+
+  function stopAudio() {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+</script>
+
+</body>
+</html>

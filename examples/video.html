@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML5 Video Tag - College Assignment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .section {
+      background: #ffffff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    video {
+      width: 100%;
+      max-width: 500px;
+      display: block;
+    }
+    button {
+      padding: 8px 16px;
+      margin: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>HTML5 Video Tag Demonstration</h1>
+
+<div class="section">
+  <h3>1. Basic Video (MP4)</h3>
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<div class="section">
+  <h3>2. Multiple Video Formats (MP4, WebM, OGG)</h3>
+  <video controls>
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    <source src="video.ogv" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div>
+
+<div class="section">
+  <h3>3. Autoplay Video (Muted)</h3>
+  <video controls autoplay muted>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="section">
+  <h3>4. Loop Video</h3>
+  <video controls loop>
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="section">
+  <h3>5. Preload Metadata</h3>
+  <video controls preload="metadata">
+    <source src="video.mp4" type="video/mp4">
+  </video>
+</div>
+
+<div class="section">
+  <h3>6. Hidden Video Controlled Using JavaScript</h3>
+
+  <video id="myVideo">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+  </video>
+
+  <button onclick="playVideo()">Play</button>
+  <button onclick="pauseVideo()">Pause</button>
+  <button onclick="stopVideo()">Stop</button>
+</div>
+
+<script>
+  const video = document.getElementById("myVideo");
+
+  function playVideo() {
+    video.play();
+  }
+
+  function pauseVideo() {
+    video.pause();
+  }
+
+  function stopVideo() {
+    video.pause();
+    video.currentTime = 0;
+  }
+</script>
+
+</body>
+</html>

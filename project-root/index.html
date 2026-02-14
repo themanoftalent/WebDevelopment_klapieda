@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Cascade - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        header { background-color: #e3f2fd; padding: 20px; }
+        h1 { color: #2e7d32; }
+        .feature-text { font-style: italic; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="color: #c62828;">The Cascade Showdown</h1>
+        <nav>
+            <a href="index.html">Home</a> | <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="intro-section">
+            <h2 class="highlight">Assignment Overview</h2>
+            <p class="feature-text">
+                This project demonstrates <span id="priority-demo">inline, internal, and external CSS</span>.
+            </p>
+            <p>The red color of the main heading above is set <strong>inline</strong>, which wins over all other rules.</p>
+        </section>
+    </main>
+
+    <footer>
+        <address>Contact: tanha@gmail.com</address>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fafafa;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+
+th, td {
+    border: 1px solid #333;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #444;
+    color: white;
+}
+
+.website-dev { background-color: #fa85d7; }
+.comp-arch { background-color: #8091eb; }
+.db-fund { background-color: #ff9999; }
+.physics { background-color: #c2ff59; }
+.math { background-color: #deda89; }
+.management { background-color: #b73f4d; }
+.psychology { background-color: #657693; }
