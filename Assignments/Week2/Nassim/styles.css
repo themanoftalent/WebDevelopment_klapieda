@@ -1,0 +1,22 @@
+section {
+    border: 1px solid #ccc; 
+    margin: 10px;
+    background-color: burlywood;
+    text-align: center;
+}
+nav a {
+    color: rgb(19, 0, 124); 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd700; /* Gold on hover for interactivity */
+}
+h1 { 
+    color: green; /* this doesnt change anything because it does not have the priority */
+}
+header{ text-align: center;}
+main {
+    text-align: center;
+}
