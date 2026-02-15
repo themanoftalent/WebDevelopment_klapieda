@@ -1,0 +1,40 @@
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+table {
+  margin: 30px auto;
+  border-collapse: collapse;
+  width: 85%;
+  box-shadow: 0 0 10px rgba(109, 109, 109, 0.2);
+}
+
+th, td {
+  border: 1px solid #4b4a4a;
+  padding: 12px;
+  text-align: center;
+}
+
+th {
+  background-color: #a8a8a8;
+  color: #fff;
+}
+
+td {
+  background-color: #fff;
+}
+
+td[rowspan] {
+  background-color: #cce5ff;
+}
+
+td[colspan] {
+  background-color: #e2e3e5;
+  font-weight: bold;
+}

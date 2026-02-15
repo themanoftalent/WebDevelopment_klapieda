@@ -1,0 +1,95 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  margin: 40px;
+}
+
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  padding: 10px;  
+}
+
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 450px;
+  margin: 0 auto;
+  
+}
+
+.form-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+label {
+  width: 160px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+input, select, textarea {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background-color: #007acc;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+.highlight {
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.checkbox-item input[type="checkbox"] {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.bio-row {
+  align-items: flex-start;
+}
+
+.submit-row {
+  justify-content: flex-end;
+}
+
+p {
+  margin-top: 20px;
+}
+
+div {
+    padding: 7px;
+}

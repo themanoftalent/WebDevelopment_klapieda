@@ -1,0 +1,27 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 , h2 {
+            color: #2E8857;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1:hover {
+            cursor: pointer;
+            background-color: #072b02;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+        audio {
+            margin-top: 20px;
+            outline: none;
+            background-color: #2E8857;
+            border-radius: 8px;
+            animation: pulse 2s infinite;
+        }
+
+        audio:hover {
+            box-shadow: 0 0 10px #25D336;
+        }

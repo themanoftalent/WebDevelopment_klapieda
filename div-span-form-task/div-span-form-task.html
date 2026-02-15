@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Register for the <span class="highlight">Cybersecurity</span> Course</h1>
+
+  <form>
+    <div class="form-row">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+    </div>
+
+    <div class="form-row">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+
+    <div class="form-row">
+      <label for="skill">Skill Level:</label>
+      <select id="skill" name="skill">
+        <option value="beginner">Beginner</option>
+        <option value="intermediate">Intermediate</option>
+        <option value="advanced">Advanced</option>
+      </select>
+    </div>
+
+    <div class="checkbox-group">
+      <label>Topics of <span class="highlight">Interest:</span></label>
+        <br>
+      <div class="checkbox-item">
+        <label for="network">Network Security</label>
+        <input type="checkbox" id="network" name="topic" value="network">
+      </div>
+
+      <div class="checkbox-item">
+        <label for="privacy"><span class="highlight">Privacy</span> Protection</label>
+        <input type="checkbox" id="privacy" name="topic" value="privacy">
+      </div>
+
+      <div class="checkbox-item">
+        <label for="ethics">Ethical Hacking</label>
+        <input type="checkbox" id="ethics" name="topic" value="ethics">
+      </div>
+    </div>
+
+    <div class="form-row bio-row">
+      <label for="bio">Short Bio:</label>
+      <textarea id="bio" name="bio" rows="4" placeholder="Tell us about yourself..."></textarea>
+    </div>
+
+    <div class="form-row submit-row">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>

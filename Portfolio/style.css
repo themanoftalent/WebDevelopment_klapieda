@@ -1,0 +1,114 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 30px 0;
+}
+
+header p {
+  color: #cce0ff;
+}
+
+nav {
+  background-color: #004080;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #f15d5d;
+}
+
+section {
+  background-color: white;
+  margin: 25px auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 800px;
+  border-radius: 8px;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: square;
+  text-align: left;
+  padding-left: 20px;
+}
+
+section#contact a {
+  color: #004080;
+  text-decoration: none;
+}
+
+section#contact a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #003366;
+  color: white;
+  padding: 15px 0;
+  margin-top: 20px;
+}
+
+ul.contact-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+ul.contact-list li {
+  display: flex;
+  align-items: center;
+}
+
+ul.contact-list li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+ul.contact-list li a {
+  color: #004080;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+ul.contact-list li a:hover {
+  text-decoration: underline;
+}
