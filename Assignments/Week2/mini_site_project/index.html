@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Mini Site</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- Internal CSS -->
+  <style>
+    header {
+      background-color: #4caf50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    #welcome {
+      font-size: 1.5rem;
+        text-align: center;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+  <header> <!-- the header is using internal css -->
+    <h1 id="fontchange">Welcome to My Mini Site</h1>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2 id="welcome">Home Page</h2>
+      <p style="color: red; font-weight: bold;">
+        This paragraph uses inline CSS (highest priority).
+      </p>
+      <p class="intro">
+        This paragraph is styled by external CSS with a class.
+      </p>
+    </section>
+
+    <section>
+      <h3>Contact Info</h3>
+      <address>
+        Email: <a href="mailto:ibegbulemremigius@gmail.com">example@example.com</a><br>
+        Location: 123 CSS Street, Style City
+      </address>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 My Mini Site</p>
+  </footer>
+</body>
+</html>
